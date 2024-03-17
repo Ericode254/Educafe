@@ -1,0 +1,54 @@
+body {
+    background-color: #969fa3;
+}
+
+h1 {
+    color: red;
+}
+
+.sign {
+    text-decoration: none;
+    color: white;
+}
+
+.image {
+    float: right;
+    width: 50%;
+}
+
+.container {
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 30%;
+    padding: 30px;
+}
+
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: white;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 300 to 900 */
+
+.sentence {
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  font-weight: 900px;
+  font-style: normal;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+
+
