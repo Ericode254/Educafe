@@ -1,67 +1,52 @@
-<!Doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EDUCAFE</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg p-3" style="background-color: #969fa3;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="font-size: xx-large; font-weight: 100%; font-family: cursive;"><span style="color: gold;">EDU</span>CAFE</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>EDUCAFE</title>
+  <link rel="stylesheet" href="stylelogin.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+<link rel="manifest" href="./assets/site.webmanifest">
+<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<div class="bg">
+
+
+</div>
+
+  <main class="form-signin">
+    
+      <h1 class="h3">Login</h1>
+    
+    <form action="">
+
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <div class="checkbox mb-3">
+        <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" value="1" name="remember_me" id="rememberMeSwitch">
+  <label class="form-check-label" for="rememberMeSwitch"> Remember me</label>
+</div>
         
-          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto nav-underline">
-              <li class="nav-item">
-                <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#">Post an edumeet</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#">View edumeets</a>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-primary" type="button"><a class="sign" href="/login/login.html">Sign Up</a></button>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-primary" type="button"><a class="sign" href="/Registeration/register.html">Login</a></button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        </nav>
-        <div class="container">
-            <div class="image">
-              <img src="./assets/teach.svg" class="rounded float-end img-fluid" alt="teaching image" />
-            </div>
-              <h1>EDUCAFE</h1>
-              <div class="typing-container">
-                <span id="sentence" class="sentence"></span>
-                <span class="input-cursor"></span>
-              </div>
-          </div>
-          <!-- <div class="container text-center">
-            <div class="row justify-content-center">
-              <div class="col-3">
-                <h1>EDUCAFE</h1>
-                <p> Welcome to Educafe where you can explore all the meetings that are to be hosted by your favorite lectures</p>
-              </div>
-              <div class="col">
-                <img src="./assets/teach.svg" class="rounded float-end img-fluid" alt="teaching image" />
-              </div>
-            </div>
-          </div> -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+      </div>
+      <button class="w-100 btn btn-lg" type="submit">Sign in</button>
+      <button class="w-100 btn btn-lg" type="submit">Create Account</button>
+    </form>
+  </main>
+  
+</body>
 </html>
