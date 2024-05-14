@@ -1,3 +1,10 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* vh stands for viewport height */
+}
+
 form {
     width: 50%;
 }
