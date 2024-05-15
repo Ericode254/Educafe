@@ -46,27 +46,28 @@
           <div class="container">
             <div style="position: relative">
      
-                <!-- Include input field with id so 
-                    that we can use it in JavaScript 
-                    to set attributes.-->
-                <label for="datetime" class="form-label"> Time </label>
+                <label for="datetime" class="form-label"> Start time </label>
                 <input class="form-control" type="text" id="datetime" />
+                <label for="datetime" class="form-label"> End time </label>
+                <input class="form-control" type="text" id="datetime2" />
             </div>
         </div> <br>
         <div class="text-center">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Post Edumeet</button>
         </div>
       </form>
       </div>
 
       <script>
  
-        // Below code sets format to the 
-        // datetimepicker having id as 
-        // datetime
         $('#datetime').datetimepicker({
             format: 'hh:mm:ss a'
         });
+
+        $('#datetime2').datetimepicker({
+            format: 'hh:mm:ss a'
+        });
+
     </script>
 </body>
 </html>

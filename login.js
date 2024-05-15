@@ -20,6 +20,7 @@ login.addEventListener("click", function (event) {
     event.preventDefault();
     const email = document.getElementById("floatingInput").value;
     const password = document.getElementById("floatingPassword").value;
+    const inform = document.getElementById("inform");
 
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
@@ -31,7 +32,5 @@ login.addEventListener("click", function (event) {
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            console.log(errorMessage);
-            alert("account not created");
         });
 });
