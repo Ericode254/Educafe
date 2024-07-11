@@ -1,4 +1,5 @@
 let form = document.getElementById("myForm");
+let createAccountBtn = document.getElementById("create")
 function handleForm(event) {
     event.preventDefault();
     let password = document.getElementById("floatingPassword").value;
@@ -6,8 +7,8 @@ function handleForm(event) {
     let user = document.getElementById("floatingInput").value;
     let loginBtn = document.getElementById("login");
     // verify a student
-    let url = "http://localhost:5000/api/students/"
-    console.log(remember);
+    let url = "http://localhost:5000/api/students/";
+    let lecturer_url = "http://localhost:5000/api/lecturers";
     async function verifyStudent(userName) {
         response = await fetch(url + userName);
         data = await response.json();
@@ -30,3 +31,7 @@ function handleForm(event) {
     })
 }
 form.addEventListener('submit', handleForm);
+
+createAccountBtn.addEventListener("click", function () {
+    window.location = "/Registeration/register.html";
+})
