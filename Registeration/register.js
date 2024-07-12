@@ -10,10 +10,10 @@ function handleForm(event) {
     let password = document.getElementById("floatingPassword");
     let choice = document.getElementById("selection");
 
-    if (!user_name || !first_name || !last_name || !email || !password || !choice) {
-        console.error("One or more required elements are missing.");
-        return;
-    }
+    // if (!user_name || !first_name || !last_name || !email || !password || !choice) {
+    //     console.error("One or more required elements are missing.");
+    //     return;
+    // }
 
     let student_url = "http://localhost:5000/api/students";
     let lecturer_url = "http://localhost:5000/api/lecturers";

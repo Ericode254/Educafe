@@ -4,6 +4,7 @@
 }
 
 body {
+    background-image: url("/assets/study_wallpaper.jpeg");
     text-align: center;
     display: flex;
     align-items: center;
@@ -20,6 +21,7 @@ body {
     display: grid;
     gap: 20px;
     padding-bottom: 30px;
+    border-radius: 10px;
 }
 
 input {
@@ -47,6 +49,6 @@ input {
     background-color: #82eeb1;
 }
 
-.otpverify {
+.emailverify {
     display: none;
 }
