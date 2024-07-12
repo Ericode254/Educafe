@@ -10,10 +10,7 @@ function handleForm(event) {
     let password = document.getElementById("floatingPassword");
     let choice = document.getElementById("selection");
 
-    // if (!user_name || !first_name || !last_name || !email || !password || !choice) {
-    //     console.error("One or more required elements are missing.");
-    //     return;
-    // }
+    localStorage.setItem("email", email.value);
 
     let student_url = "http://localhost:5000/api/students";
     let lecturer_url = "http://localhost:5000/api/lecturers";
@@ -45,11 +42,11 @@ function handleForm(event) {
     }
 
     if (choice.value === "Student") {
-        addPerson(student_url, data);
-        // window.location = "/index.html";
+        // addPerson(student_url, data);
+        window.location = "/verification/emailotp.html";
     } else if (choice.value === "Lecturer") {
-        addPerson(lecturer_url, data);
-        // window.location = "/index.html";
+        // addPerson(lecturer_url, data);
+        window.location = "/verification/emailotp.html";
     } else {
         console.error("Invalid choice.");
     }
