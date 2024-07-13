@@ -17,9 +17,9 @@ function sendOtp() {
     let otpVal = Math.floor(Math.random() * 10000);
     let emailBody = `Your Educafe otp is ${otpVal}`;
     Email.send({
-        SecureToken: "81f94e24-1159-4ce8-b57a-9bbd714bfee0",
+        SecureToken: "",
         To: email.value,
-        From: "jilloerick6@gmail.com",
+        From: "",
         Subject: "Email verification",
         Body: emailBody
     }).then(
