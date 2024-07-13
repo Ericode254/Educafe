@@ -42,10 +42,10 @@ function handleForm(event) {
     }
 
     if (choice.value === "Student") {
-        // addPerson(student_url, data);
+        addPerson(student_url, data);
         window.location = "/verification/emailotp.html";
     } else if (choice.value === "Lecturer") {
-        // addPerson(lecturer_url, data);
+        addPerson(lecturer_url, data);
         window.location = "/verification/emailotp.html";
     } else {
         console.error("Invalid choice.");
